@@ -10,11 +10,11 @@
     </mat-select>
   </mat-form-field>
 
-<mat-form-field appearance="outline">
+<mat-form-field>
     <mat-label>Filter</mat-label>
     <input #search (keyup)="applyFilter(search.value)" matInput placeholder="Placeholder">
-    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
-    <mat-hint>Hint</mat-hint>
+    <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint>Hint</mat-hint> -->
   </mat-form-field>
 
 <table mat-table [dataSource]="myDataArray" class="mat-elevation-z8">

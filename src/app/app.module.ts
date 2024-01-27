@@ -43,6 +43,11 @@ import { EditableComponent } from './editable/editable.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { AnimalEditorComponent } from './animal-editor/animal-editor.component';
+import { MatNativeDateModule } from '@angular/material/core';
+
+import {NativeDateAdapter} from '@angular/material/core';
+
 
 @NgModule({
   declarations: [
@@ -51,7 +56,8 @@ import { FormsModule } from '@angular/forms';
     BasicComponent,
     PaginatorComponent,
     FilterComponent,
-    EditableComponent
+    EditableComponent,
+    AnimalEditorComponent
   ],
   imports: [
     BrowserModule,
@@ -90,7 +96,10 @@ import { FormsModule } from '@angular/forms';
     MatPaginatorModule,
     NgbModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatNativeDateModule, 
+    // NativeDateAdapter
+
 
   ],
   providers: [],
