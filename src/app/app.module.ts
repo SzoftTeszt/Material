@@ -41,6 +41,8 @@ import { PaginatorComponent } from './paginator/paginator.component';
 import { FilterComponent } from './filter/filter.component';
 import { EditableComponent } from './editable/editable.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -87,7 +89,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatSortModule,
     MatPaginatorModule,
     NgbModule,
-
+    HttpClientModule,
+    FormsModule
 
   ],
   providers: [],

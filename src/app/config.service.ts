@@ -6,7 +6,10 @@ import { Injectable } from '@angular/core';
 export class ConfigService {
   public menuItems=[
     {url:'/', text:'Home', icon:'home'},
-    {url:'/basic', text:'Basic', icon:'table-chart'},
+    {url:'/basic', text:'Basic', icon:'table_chart'},
+    {url:'/paginator', text:'Paginator', icon:'last_page'},
+    {url:'/filter', text:'Filter', icon:'filter_alt'},
+    {url:'/editable', text:'Editable', icon:'edit'},
 
   ]
   constructor() { }
